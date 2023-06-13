@@ -1,0 +1,44 @@
+@use "../abtract/variables" as colors_bg;
+@font-face {
+  font-family: condensed_bold;
+  src: url("../assets/fonts/Cabin_Condensed-Bold.ttf");
+}
+
+@font-face {
+  font-family: condensed_semibold;
+  src: url("../assets/fonts/Cabin_Condensed-SemiBold.ttf");
+}
+
+body {
+  min-height: 100vh;
+  font-family: condensed_semibold;
+  font-size: 18px;
+  hyphens: manual;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-family: condensed_bold;
+  font-size: colors_bg.$lg;
+  text-align: center;
+  letter-spacing: colors_bg.$spacing;
+}
+
+p {
+  line-height: 1.35;
+  text-align: center;
+  letter-spacing: colors_bg.$spacing;
+  font-size: colors_bg.$md;
+}
+
+strong {
+  display: block;
+  font-family: condensed_bold;
+}
+
+a {
+  font-size: colors_bg.$sm;
+  letter-spacing: colors_bg.$spacing;
+}
