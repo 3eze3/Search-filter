@@ -17,6 +17,7 @@ body {
   font-smooth: always;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(#000, #add, rgb(128, 114, 114));
 }
 
 h1 {
@@ -31,11 +32,14 @@ p {
   text-align: center;
   letter-spacing: colors_bg.$spacing;
   font-size: colors_bg.$md;
+  color: #fff;
 }
 
 strong {
   display: block;
   font-family: condensed_bold;
+  color: rgb(2, 43, 47);
+  text-shadow: 0.1rem 0.1rem 0.2rem #00000086;
 }
 
 a {
