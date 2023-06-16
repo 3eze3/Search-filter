@@ -1,7 +1,8 @@
 // ------- Reset of tags and Fonts -------
 @use "base/reset";
 @use "base/fonts";
+// ------- Components -------
+@use "components/bg_animtion";
 // ------- Layout -------
-@use "layout/bg_animtion";
 @use "layout/header";
 // ------- Reset of tags and Fonts -------
