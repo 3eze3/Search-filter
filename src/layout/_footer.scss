@@ -1,0 +1,25 @@
+.footer {
+  min-height: 5rem;
+  outline: solid red 1px;
+  padding-inline: 0.5rem;
+  //
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  //
+  &__social {
+    // display: flex;
+    // flex-direction: column;
+    // align-self: center;
+    // justify-content: center;
+  }
+  &__author {
+    align-self: flex-end;
+  }
+  &__active {
+    color: #fff;
+  }
+  &__link {
+    cursor: pointer;
+  }
+}
