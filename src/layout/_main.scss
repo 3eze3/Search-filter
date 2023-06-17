@@ -1,0 +1,15 @@
+.main {
+  position: relative;
+  &__title {
+    color: rgb(255, 255, 255);
+    text-shadow: 0.1rem 0.1rem 0.5rem #c9c9c9, 0.2rem 0.2rem 1rem #aff,
+      0.3rem 0.3rem 1.25rem rgb(122, 255, 255);
+  }
+
+  &__draw {
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    top: 0;
+  }
+}
