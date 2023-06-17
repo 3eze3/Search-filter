@@ -3,6 +3,9 @@
 @use "base/fonts";
 // ------- Components -------
 @use "components/bg_animtion";
+@use "components/form";
 // ------- Layout -------
 @use "layout/header";
+@use "layout/main";
+@use "layout/footer";
 // ------- Reset of tags and Fonts -------
