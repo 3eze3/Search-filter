@@ -11,8 +11,10 @@
   }
 }
 
-@mixin neo-shadow($eje, $color, $mix_colors, $percen) {
-  $light_color: mix($color $mix_colors $percen);
-  box-shadow: $eje $eje ($eje * 2) $color,
-    (-$eje) (-$eje) ($eje * 2) $light_color;
+@mixin roundSlices($top, $left, $bottom, $rigth) {
+  border-radius: $top $left $bottom $rigth;
+}
+
+@mixin shadow($eje, $color, $blur: $eje * 2) {
+  box-shadow: $eje $eje $blur $color;
 }
