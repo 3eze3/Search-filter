@@ -1,5 +1,5 @@
-@use "../abtract/variables" as colors_bg;
 @use "../abtract/mixins" as layout;
+@use "../abtract/variables" as colors_bg;
 @font-face {
   font-family: condensed_bold;
   src: url("../assets/fonts/Cabin_Condensed-Bold.ttf");
@@ -18,7 +18,7 @@ body {
   font-smooth: always;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(#000, rgb(0, 255, 255), rgb(24, 112, 109));
+  background-image: colors_bg.$linear-dark-cyan-soft;
 }
 
 h1 {
@@ -36,7 +36,7 @@ p {
   text-align: center;
   letter-spacing: colors_bg.$spacing;
   font-size: colors_bg.$md;
-  color: #fff;
+  color: colors_bg.$white;
   @include layout.media-break() {
     font-size: 1.7em;
   }
@@ -48,7 +48,7 @@ strong {
     display: inline;
   }
   font-family: condensed_bold;
-  color: rgb(2, 43, 47);
+  color: colors_bg.$soft-green;
   text-shadow: 0.1rem 0.1rem 0.2rem #00000086;
 }
 
