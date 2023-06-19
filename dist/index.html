@@ -51,39 +51,43 @@
     </header>
     <main class="main">
       <section class="main__wrapper">
-        <h1 class="main__title">Api de comidas</h1>
-        <!--  -->
-        <!--  -->
-        <!--  -->
-        <!--  -->
+        <h1 class="main__title">Search your devices</h1>
         <!-- Formularia busqueda -->
-        <!--  -->
-        <!--  -->
-        <!--  -->
-        <!--  -->
         <form action="#" class="main__form form">
-          <label for="search" class="form__label">
+          <label class="form__label">
             <input
               class="form__input"
-              type="search"
+              type="text"
               name="search"
-              id="search" />
-            <div class="">
-              <div src="" alt="" />
-            </div>
+              dir="ltr"
+              aria-label="search" />
           </label>
+          <button class="form__button">
+            <img
+              class="form__icon"
+              src="assets/images/search.svg"
+              alt
+              aria-hidden="true" />
+          </button>
         </form>
-        <!-- Dibujo de mi animado -->
-        <div class=""></div>
+        <!-- Dibujo de mi animado ultimo-->
+        <div class="main__draw"></div>
       </section>
     </main>
     <!-- ------------------------------------ Pie de pagina ------------------------------------ -->
-    <footer class="">
-      <ul class="">
-        <li class=""><a class="" href="">Frontend Mentor</a></li>
-        <li class=""><a class="" href="">Linkedin</a></li>
-        <li class=""><a class="" href="">Github</a></li>
+    <footer class="footer">
+      <ul class="footer__social">
+        <li class="footer__item">
+          <a class="footer__link" href="">Frontend Mentor</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="">Linkedin</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="">Github</a>
+        </li>
       </ul>
+      <p class="footer__author">&copy;Ezequiel Cordova</p>
     </footer>
   </body>
 </html>
