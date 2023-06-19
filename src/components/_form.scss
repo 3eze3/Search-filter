@@ -1,4 +1,30 @@
+@use "../abtract/mixins" as layout;
+@use "../abtract/variables" as colors_bg;
 .form {
-  outline: solid red 1px;
+  height: 5rem;
   margin-block: 2rem;
+  padding-inline: 1rem;
+  @include layout.flex($direction: row, $gap: 0);
+  &__input {
+    width: 18rem;
+    height: 2.647rem;
+    padding-left: 1rem;
+    color: colors_bg.$cyan;
+    outline: solid colors_bg.$white-cyan 1px;
+    @include layout.shadow(-0.2rem, colors_bg.$soft-dark, 0.4rem);
+    @include layout.roundSlices(1.25rem, 0, 0, 1.25rem);
+    @include layout.media-break() {
+      width: 37rem;
+    }
+  }
+
+  &__button {
+    padding: 0.15rem 1.5rem;
+    @include layout.roundSlices(0, 1.25rem, 1.25rem, 0);
+    background-color: colors_bg.$white-cyan;
+    cursor: pointer;
+  }
+  &__icon {
+    width: 2.5rem;
+  }
 }
