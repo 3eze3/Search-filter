@@ -3,13 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.2.0/css/all.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <script src="js/main.js" defer></script>
     <title>Filter Search</title>
   </head>
   <body>
-    <div class="foreground">
+    <div class="foreground" aria-hidden="true">
       <div class="foreground__image"></div>
       <div class="foreground__image"></div>
       <div class="foreground__image"></div>
@@ -28,31 +31,16 @@
       <div class="foreground__image"></div>
       <div class="foreground__image"></div>
     </div>
-    <header class="header">
-      <div class="header__information">
+    <main class="main">
+      <div class="main__container">
         <img
-          class="header__logo"
-          src="assets/images/logo.png"
-          alt="Logo Robot Sad" />
-        <p class="header__author">
-          Ezequiel Cordova
-          <strong class="header__author header__author--profesion">
-            Fronted Developer
-          </strong>
-        </p>
-      </div>
-      <div class="header__wrapper">
-        <img
-          class="header__icon"
+          class="main__icon"
           src="assets/images/icon_glas.svg"
           alt
           aria-hidden="true" />
       </div>
-    </header>
-    <main class="main">
       <section class="main__wrapper">
         <h1 class="main__title">Search your devices</h1>
-        <!-- Formularia busqueda -->
         <form action="#" class="main__form form">
           <label class="form__label">
             <input
@@ -73,21 +61,81 @@
         <!-- Dibujo de mi animado ultimo-->
         <div class="main__draw"></div>
       </section>
+      <section class="main__content">
+        <!-- <h2 class="main__title">Contenido del APi</h2> -->
+        <table class="main__table table">
+          <thead class="table__head">
+            <tr class="table__row">
+              <th class="table__data table__data--head">ID</th>
+              <th class="table__data table__data--head">NAME</th>
+              <th class="table__data table__data--head">COUNTRY</th>
+              <th class="table__data table__data--head">REGION</th>
+            </tr>
+          </thead>
+          <tbody class="table__body">
+            <tr class="table__row">
+              <td class="table__data">3515514</td>
+              <td class="table__data">Al Mamzar</td>
+              <td class="table__data">United Arab Emirates</td>
+              <td class="table__data">Emirate of Dubai</td>
+            </tr>
+
+            <tr class="table__row">
+              <td class="table__data">3515514</td>
+              <td class="table__data">Al Mamzar</td>
+              <td class="table__data">United Arab Emirates</td>
+              <td class="table__data">Emirate of Dubai</td>
+            </tr>
+
+            <tr class="table__row">
+              <td class="table__data">3515514</td>
+              <td class="table__data">Al Mamzar</td>
+              <td class="table__data">United Arab Emirates</td>
+              <td class="table__data">Emirate of Dubai</td>
+            </tr>
+
+            <tr class="table__row">
+              <td class="table__data">3515514</td>
+              <td class="table__data">Al Mamzar</td>
+              <td class="table__data">United Arab Emirates</td>
+              <td class="table__data">Emirate of Dubai</td>
+            </tr>
+
+            <tr class="table__row">
+              <td class="table__data">3515514</td>
+              <td class="table__data">Al Mamzar</td>
+              <td class="table__data">United Arab Emirates</td>
+              <td class="table__data">Emirate of Dubai</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </main>
     <!-- ------------------------------------ Pie de pagina ------------------------------------ -->
     <footer class="footer">
-      <ul class="footer__social">
-        <li class="footer__item">
-          <a class="footer__link" href="">Frontend Mentor</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="">Linkedin</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="">Github</a>
-        </li>
-      </ul>
-      <p class="footer__author">&copy;Ezequiel Cordova</p>
+      <nav class="footer__social">
+        <a
+          href="https://www.frontendmentor.io/profile/3eze3"
+          target="_blank"
+          class="footer__link"
+          aria-label="Frontend Mentor">
+          <i class="footer__icon fa-brands fa-diamond"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/ezequielcordova/"
+          target="_blank"
+          class="footer__link"
+          aria-label="Linkedin">
+          <i class="footer__icon fa-brands fa-linkedin"></i>
+        </a>
+        <a
+          href="https://github.com/3eze3"
+          target="_blank"
+          class="footer__link"
+          aria-label="Github">
+          <i class="footer__icon fa-brands fa-github"></i>
+        </a>
+      </nav>
     </footer>
   </body>
 </html>
