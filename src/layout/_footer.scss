@@ -1,25 +1,43 @@
+@use "../abtract/mixins" as layout;
+@use "../abtract/variables" as colors_bg;
 .footer {
-  min-height: 5rem;
-  outline: solid red 1px;
-  padding-inline: 0.5rem;
-  //
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  //
+  margin-top: 6rem;
+  padding-bottom: 2rem;
+  @include layout.flex($gap: 1.5rem);
   &__social {
-    // display: flex;
-    // flex-direction: column;
-    // align-self: center;
-    // justify-content: center;
+    width: 30%;
+    @include layout.media-break {
+      width: 100%;
+    }
+    @include layout.flex($direction: row, $gap: 2.5rem);
   }
-  &__author {
-    align-self: flex-end;
-  }
-  &__active {
-    color: #fff;
-  }
+
   &__link {
-    cursor: pointer;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 1.5rem;
+    @include layout.flex($direction: row, $gap: 0);
+    border-radius: 50%;
+    box-shadow: 0.08rem 0.08rem 0.2rem rgba(25, 62, 60, 0.273) inset,
+      -0.08rem -0.08rem 0.2rem rgba(185, 187, 190, 0.597) inset;
+    transition: transform 0.2s ease-in, backgroun-color 0.2s ease;
+
+    &:hover {
+      transform: translateY(-0.75rem);
+      background-color: rgb(27, 207, 213);
+      transition: transform 0.2s ease-in, backgroun-color 0.2s ease;
+    }
+
+    &:hover .footer__icon {
+      color: colors_bg.$white;
+    }
+  }
+  &__icon {
+    color: colors_bg.$white-cyan;
+    font-size: 0.85em;
+  }
+
+  &__copyright {
+    font-size: 0.7em;
   }
 }
