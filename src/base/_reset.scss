@@ -29,6 +29,13 @@ a {
   font-size: inherit;
 }
 
+table,
+tr,
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 li {
   list-style-type: none;
 }
