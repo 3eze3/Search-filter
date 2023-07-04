@@ -1,0 +1,21 @@
+@font-face {
+  font-family: font-1;
+  src: url();
+}
+
+body {
+  min-height  : 100vh;
+  font-size   : 100%;
+  hyphens: manual;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 span {
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color:inherit;
+}
