@@ -1,21 +1,55 @@
+@use "../abtract/variables" as colors_bg;
 @font-face {
-  font-family: font-1;
-  src: url();
+  font-family: openSans;
+  src: url(../assets/font/OpenSans-SemiBold.ttf);
 }
 
 body {
-  min-height  : 100vh;
-  font-size   : 100%;
+  min-height: 100vh;
+  font-size: 18px;
+  font-family: openSans;
   hyphens: manual;
   font-smooth: always;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: colors_bg.$light-blue; 
 }
 
-h1 span {
-  font-size: inherit;
-  font-weight: inherit;
-  font-style: inherit;
-  text-decoration: none;
-  color:inherit;
+h1 {
+  color: colors_bg.$soft-cyan;
+  font-size: 4em;
+  text-align: center;
+  padding-top:2rem;
+}
+
+span {
+  display: inline-block;
+}
+
+input {
+  border-radius: 20px 0 0 20px;
+  box-shadow: -.1rem .1rem .4rem colors_bg.$marron;
+  padding: .25rem  1rem;
+  &:focus{
+    outline: solid 1.5px  colors_bg.$light-white;;
+  }
+}
+
+button {
+  border-radius: 0 20px 20px 0;
+  background-color: colors_bg.$light-white;
+  padding: .5rem;
+  width: 3rem;
+  cursor: pointer;
+}
+
+th {
+color: colors_bg.$cyan;
+font-size: 2em; 
+padding: .5rem 1rem;
+}
+
+td {
+  color: colors_bg.$light-gray;
+  padding: .5rem 1rem;
 }
