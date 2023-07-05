@@ -17,9 +17,9 @@ body {
 
 h1 {
   color: colors_bg.$soft-cyan;
-  font-size: 4em;
-  text-align: center;
-  padding-top:2rem;
+  font-size: 3em;
+  text-align:center;
+  padding-top: 2rem;
 }
 
 span {
@@ -27,7 +27,7 @@ span {
 }
 
 input {
-  border-radius: 20px 0 0 20px;
+  border-radius:  colors_bg.$round-20-px; 
   box-shadow: -.1rem .1rem .4rem colors_bg.$marron;
   padding: .25rem  1rem;
   &:focus{
@@ -36,7 +36,7 @@ input {
 }
 
 button {
-  border-radius: 0 20px 20px 0;
+  border-radius:  colors_bg.$round-20-px; 
   background-color: colors_bg.$light-white;
   padding: .5rem;
   width: 3rem;
@@ -44,12 +44,14 @@ button {
 }
 
 th {
-color: colors_bg.$cyan;
-font-size: 2em; 
-padding: .5rem 1rem;
+  color: colors_bg.$cyan;
+  font-size: 1.1em; 
+  padding: .5rem 1.25rem;
 }
 
 td {
   color: colors_bg.$light-gray;
-  padding: .5rem 1rem;
+  padding-block: .5rem;
+  font-size: .75em; 
+  text-align: center;
 }
