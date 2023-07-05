@@ -27,19 +27,14 @@ span {
 }
 
 input {
-  border-radius:  colors_bg.$round-20-px; 
-  box-shadow: -.1rem .1rem .4rem colors_bg.$marron;
-  padding: .25rem  1rem;
+  box-shadow: -.1rem .1rem .8rem colors_bg.$marron;
   &:focus{
     outline: solid 1.5px  colors_bg.$light-white;;
   }
 }
 
 button {
-  border-radius:  colors_bg.$round-20-px; 
   background-color: colors_bg.$light-white;
-  padding: .5rem;
-  width: 3rem;
   cursor: pointer;
 }
 
