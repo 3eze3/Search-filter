@@ -1,0 +1,13 @@
+@use "../abtract/mixins" as layout;
+.component {
+  width: 100%;
+  min-height: 100dvh;
+  padding-block: 2rem;
+  &__wrapper {
+    @include layout.flex();
+  }
+  &__table {
+    width: 90%;
+    box-shadow: .2rem .2rem .4rem #e3f0f0 inset, -.2rem -.2rem .4rem #deebeb inset;
+  }
+}
