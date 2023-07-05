@@ -1,0 +1,18 @@
+@use "../abtract/mixins" as layout;
+.form{
+  &__label{
+    @include layout.flex($direction:row , $gap:0rem);
+  }
+
+  &__input{
+    padding: .75rem 1rem;
+    width: 100%;
+    @include layout.round();
+  }
+
+  &__send{
+    padding: .47rem .5rem;
+    width: 4rem;
+    @include layout.round(0, 20px, 20px, 0);
+  }
+}
