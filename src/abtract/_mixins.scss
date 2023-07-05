@@ -11,3 +11,7 @@
     @content 
   }
 }
+
+@mixin round ($top: 20px, $left:0, $bottom:0, $rigth:20px) {
+  border-radius: $top $left $bottom $rigth;
+}
