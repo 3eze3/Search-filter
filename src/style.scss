@@ -1,7 +1,8 @@
 // Reset styles 
 @use "base/reset";
 @use "base/font";
-// Components form 
-@use "component/form";
 // layouts 
 @use "layout/main";
+// Components form 
+@use "component/form";
+@use "component/animationTitle";
