@@ -1,5 +1,9 @@
 @use "../abtract/mixins" as layout;
-.form{
+.form {
+  @include layout.media-break() {
+    width: 40%;
+    margin-block: 2.5rem;
+  }
   &__label{
     @include layout.flex($direction:row , $gap:0rem);
   }
@@ -8,6 +12,9 @@
     padding: .75rem 1rem;
     width: 100%;
     @include layout.round();
+    @include layout.media-break() {
+      padding: .84rem 1rem;
+    }
   }
 
   &__send{
