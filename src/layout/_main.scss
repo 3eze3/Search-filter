@@ -8,6 +8,10 @@
   }
   &__table {
     width: 90%;
-    box-shadow: .2rem .2rem .4rem #c3d0d092 inset, -.2rem -.2rem .4rem #d9ecec inset;
+    box-shadow: 0.2rem 0.2rem 0.4rem #c3d0d092 inset,
+      -0.2rem -0.2rem 0.4rem #d9ecec inset;
   }
+}
+.filter {
+  opacity: 0;
 }
