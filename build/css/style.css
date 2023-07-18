@@ -1,0 +1,161 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+*::before, *::after {
+  content: "";
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+form, input, button, label {
+  font-family: inherit;
+  font-size: inherit;
+  hyphens: auto;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+}
+
+table, tr, td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+@font-face {
+  font-family: openSans;
+  src: url(../assets/font/OpenSans-SemiBold.ttf);
+}
+body {
+  min-height: 100vh;
+  font-size: 18px;
+  font-family: openSans;
+  hyphens: manual;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #E3F4F4;
+}
+
+h1 {
+  color: #91a8a8;
+  font-size: 3em;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+input {
+  box-shadow: -0.1rem 0.1rem 0.8rem rgba(88, 113, 113, 0.8823529412);
+}
+input:focus {
+  outline: solid 1.5px #c0d2ce;
+}
+
+button {
+  background-color: #c0d2ce;
+  cursor: pointer;
+}
+
+th {
+  color: #0E8388;
+  font-size: 1.1em;
+  padding: 0.5rem 1.25rem;
+}
+
+td {
+  color: #4e5c5d;
+  padding-block: 0.5rem;
+  font-size: 0.75em;
+  text-align: center;
+}
+
+.component {
+  width: 100%;
+  min-height: 100dvh;
+  padding-block: 2rem;
+}
+.component__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+.component__table {
+  width: 90%;
+  box-shadow: 0.2rem 0.2rem 0.4rem rgba(195, 208, 208, 0.5725490196) inset, -0.2rem -0.2rem 0.4rem #d9ecec inset;
+}
+
+.filter {
+  opacity: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .form {
+    width: 40%;
+    margin-block: 2.5rem;
+  }
+}
+.form__label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0rem;
+}
+.form__input {
+  padding: 0.75rem 1rem;
+  width: 100%;
+  border-radius: 20px 0 0 20px;
+}
+@media screen and (min-width: 600px) {
+  .form__input {
+    padding: 0.84rem 1rem;
+  }
+}
+.form__send {
+  padding: 0.47rem 0.5rem;
+  width: 4rem;
+  border-radius: 0 20px 20px 0;
+}
+
+.title {
+  font-weight: 900;
+  background: linear-gradient(to right, #75bcdf, #57657a, #4d4d9c, #3f3f45);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-animation 3s ease-in-out infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
